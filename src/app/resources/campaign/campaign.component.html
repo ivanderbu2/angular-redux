@@ -1,0 +1,7 @@
+<h2>List of campaigns</h2>
+<button class="btn btn-primary" (click)="loadNew()">Load New</button>
+<ol>
+    <li *ngFor="let campaign of (campaigns | async)">
+        {{campaign.name}}
+    </li>
+</ol>
