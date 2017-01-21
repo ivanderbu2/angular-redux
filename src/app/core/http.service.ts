@@ -16,7 +16,7 @@ import { AngularReduxRequestOptions } from './angular-redux-request.options';
 @Injectable()
 export class HttpService extends Http {
 
-    apiUrl = 'http://dingo-api.codingo.me/';
+    apiUrl = 'https://dingo-api.codingo.me/';
 
     constructor(
         backend: XHRBackend,
