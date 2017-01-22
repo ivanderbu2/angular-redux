@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { StoreModule } from '@ngrx/store';
+import { MaterialModule } from '@angular/material';
 
 import { CoreModule } from './core/core.module';
 
@@ -30,6 +31,7 @@ import { campaigns } from './_reducers/campaign.reducer';
       campaigns
     }),
     StoreDevtoolsModule.instrumentOnlyWithExtension(),
+    MaterialModule.forRoot()
   ],
   providers: [
     CampaignService

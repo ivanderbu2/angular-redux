@@ -13,6 +13,8 @@ import {
 
 import { AngularReduxRequestOptions } from './angular-redux-request.options';
 
+import { LoaderService } from './loader/loader.service';
+
 @Injectable()
 export class HttpService extends Http {
 
@@ -20,12 +22,15 @@ export class HttpService extends Http {
 
     constructor(
         backend: XHRBackend,
-        defaultOptions: AngularReduxRequestOptions
+        defaultOptions: AngularReduxRequestOptions,
+        private loaderService: LoaderService
     ) { 
         super(backend, defaultOptions);
     }
 
     get(url: string, options?: RequestOptionsArgs): Observable<any> {
+
+        this.showLoader();
 
         return super.get(this.getFullUrl(url), this.requestOptions(options))
             .catch(this.onCatch)
@@ -62,7 +67,7 @@ export class HttpService extends Http {
     }
 
     private onSuccess(res: Response): void {
-        console.log('success');
+        console.log('Request successful');
     }
 
     private onError(res: Response): void {
@@ -70,6 +75,14 @@ export class HttpService extends Http {
     }
 
     private onEnd(): void {
-        console.log('Request completed.');
+        this.hideLoader();
+    }
+
+    private showLoader(): void {
+        this.loaderService.show();
+    }
+
+    private hideLoader(): void {
+        this.loaderService.hide();
     }
 }
