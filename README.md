@@ -1,5 +1,21 @@
 # AngularRedux
 
+Checkout Live demo [here](https://ivanderbu2.github.io/angular-redux/)
+
+This project includes:
+- Redux setup with data loading via REST API
+- Custom Http service with JWT authentication
+- Loader service with Angular Material Progress bar on each request
+
+Related Medium Posts:
+
+- [Angular 2 and Redux simplified](https://medium.com/@ivan.radunovic/angular-2-with-redux-using-ngrx-store-2f93a8ad0dd#.nooxcvjyj)
+- [Angular 2 and JWT authentication](https://medium.com/@ivan.radunovic/angular-2-and-jwt-authentication-d30c21a2f24f#.9xgtoxb1c)
+- [Angular 2 and environment variables](https://medium.com/@ivan.radunovic/angular-2-and-environment-variables-59c57ba643be#.k3wmx9dti)
+- Show loader on every request in Angular 2 - cooming soon...
+
+## Angular CLI Manual
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
 
 ## Development server
