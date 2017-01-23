@@ -12,7 +12,7 @@ Related Medium Posts:
 - [Angular 2 and Redux simplified](https://medium.com/@ivan.radunovic/angular-2-with-redux-using-ngrx-store-2f93a8ad0dd#.nooxcvjyj)
 - [Angular 2 and JWT authentication](https://medium.com/@ivan.radunovic/angular-2-and-jwt-authentication-d30c21a2f24f#.9xgtoxb1c)
 - [Angular 2 and environment variables](https://medium.com/@ivan.radunovic/angular-2-and-environment-variables-59c57ba643be#.k3wmx9dti)
-- Show loader on every request in Angular 2 - cooming soon...
+- [Show loader on every request in Angular 2](https://medium.com/@ivan.radunovic/show-loader-on-every-request-in-angular-2-9a0fca86afef#.x6yzci64i)
 
 ## Angular CLI Manual
 
