@@ -1,5 +1,7 @@
 # AngularRedux
 
+[![Angular Redux Live Demo](https://github.com/ivanderbu2/angular-redux/raw/master/img/AngularRedux.gif)](https://ivanderbu2.github.io/angular-redux/)
+
 Checkout Live demo [here](https://ivanderbu2.github.io/angular-redux/)
 
 This project includes:
