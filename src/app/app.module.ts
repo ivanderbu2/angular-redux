@@ -28,10 +28,10 @@ import { campaigns } from './_reducers/campaign.reducer';
     HttpModule,
     CoreModule,
     StoreModule.provideStore({
-      campaigns
+      campaigns:campaigns
     }),
     StoreDevtoolsModule.instrumentOnlyWithExtension(),
-    MaterialModule.forRoot()
+    MaterialModule
   ],
   providers: [
     CampaignService
